@@ -29,7 +29,7 @@ CREATE TABLE vehiculo (
     CONSTRAINT `pk_id_vehiculo` PRIMARY KEY(id_placa),
     CONSTRAINT `fk_id_placa_vehiculo_linea`
       FOREIGN KEY (id_linea) REFERENCES linea(id)
-);
+); 
 
 
 INSERT INTO marca (nombre, descripcion, estado)
@@ -43,4 +43,22 @@ INSERT INTO vehiculo
 VALUES ('CVY-000', '1', '2010', '2023-03-24', '2024-05-30');
 
 
+INSERT INTO vehiculo
+VALUES ('UFM-03F', '1', '2020', '2023-03-24', '2024-05-30');
 
+
+INSERT INTO marca (nombre, descripcion, estado)
+VALUES ('Renault', 'Renault es un fabricante francés de automóviles tanto de lujo como de turismo, vehículos comerciales y automóviles de carreras.', 'S');
+
+
+INSERT INTO linea (id_marca, nombre, descripcion, estado)
+VALUES ('2', 'Renault Megane', 'El Renault Megane es uno de los compactos más populares en el mercado español gracias a su gran equilibrio entre sentido práctico y precio.', 'S' );
+
+
+
+INSERT INTO marca (nombre, descripcion, estado)
+VALUES ('Jeep', 'Jeep es una marca de vehículos estadounidense, especializada en la producción de automóviles todoterreno', 'S');
+
+
+INSERT INTO linea (id_marca, nombre, descripcion, estado)
+VALUES ('7', 'Jeep Willys', 'es un vehículo todoterreno de tracción en las cuatro ruedas', 'N' );
