@@ -20,6 +20,13 @@
       "color": "Blanco",
       "placa": "ABE-345",
       "id": 3
+    },
+    {
+      "marca": "Jeep",
+      "linea": "Jeep Willys",
+      "color": "Azul",
+      "placa": "VVE-129",
+      "id": 4
     }
   ]
 }
